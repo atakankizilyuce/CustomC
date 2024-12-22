@@ -1,0 +1,2 @@
+var name = "atakan";
+print(name);

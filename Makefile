@@ -1,7 +1,7 @@
-exec = hello.out
+exec = hello.ati
 sources = $(wildcard src/*.c)
 objects = $(sources:.c=.o)
-flags = -g 
+flags = -g
 
 
 $(exec): $(objects)
@@ -12,9 +12,9 @@ $(exec): $(objects)
 
 install:
 	make
-	cp ./hello.out /home/myprojects/CustomC
+	cp ./hello.ati /home/myprojects/CustomC
 
 clean:
-	-rm *.out
+	-rm *.ati
 	-rm *.o
 	-rm src/*.o
